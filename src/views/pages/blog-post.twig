@@ -1,0 +1,31 @@
+{% extends "@layouts/base.twig" %}
+
+{% block title %}{{ post.title }}{% endblock %}
+{% block description %}{{ post.excerpt }}{% endblock %}
+
+{% block og_title %}{{ post.title }}{% endblock %}
+{% block og_description %}{{ post.excerpt }}{% endblock %}
+{% block og_image %}{{ post.og_image ? post.og_image : og_fallback }}{% endblock %}
+
+{% block page_heading %}{{ post.title }}{% endblock %}
+{% block page_subheading %}{{ post.date }}{% endblock %}
+
+{% block content %}
+<section class="container mx-auto px-4 py-12 max-w-3xl">
+  <div class="rounded-2xl overflow-hidden bg-gray-100 mb-8">
+    {% if post.cover %}
+      <img src="{{ post.cover }}" alt="{{ post.title }}" class="w-full h-auto" loading="lazy" />
+    {% endif %}
+  </div>
+
+  <article class="prose max-w-none">
+    {% for paragraph in post.content %}
+      <p>{{ paragraph }}</p>
+    {% endfor %}
+  </article>
+
+  <div class="mt-10">
+    <a href="/blog.html" class="btn">← Back to Blog</a>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends "@layouts/base.twig" %}
+{% block title %}Testimonials{% endblock %}
+{% block page_heading %}Testimonials{% endblock %}
+{% block page_subheading %}What people say about us{% endblock %}
+
+{% block content %}
+<section class="container mx-auto px-4 py-12">
+  <div class="grid md:grid-cols-3 gap-6">
+    {% for i in 1..6 %}
+      <div class="p-6 rounded-2xl shadow bg-white">
+        <p class="text-gray-700">“Amazing work and super fast delivery.”</p>
+        <p class="mt-3 text-sm text-gray-500">Client {{ i }}</p>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+{% endblock %}

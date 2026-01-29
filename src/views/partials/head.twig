@@ -1,0 +1,27 @@
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>{% block title %}My Website Template{% endblock %}</title>
+<meta name="description" content="{% block description %}Modern front-end boilerplate with Twig + Tailwind + Mix.{% endblock %}" />
+
+<link rel="icon" href="/favicon/favicon.ico" />
+
+<!-- Open Graph -->
+<meta property="og:title" content="{% block og_title %}My Website{% endblock %}" />
+<meta property="og:description" content="{% block og_description %}Fast, clean, modern UI boilerplate.{% endblock %}" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="{% block og_url %}https://example.com{% endblock %}" />
+<meta property="og:image" content="{% block og_image %}/images/og-cover.jpg{% endblock %}" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="{% block twitter_title %}My Website{% endblock %}" />
+<meta name="twitter:description" content="{% block twitter_description %}Fast, clean, modern UI boilerplate.{% endblock %}" />
+<meta name="twitter:image" content="{% block twitter_image %}/images/og-cover.jpg{% endblock %}" />
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/css/main.css" />

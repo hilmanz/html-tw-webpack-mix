@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include "@partials/head.twig" %}
+  </head>
+  <body class="bg-white text-gray-900">
+
+    {% include "@partials/nav.twig" %}
+
+    <header class="py-10 border-b">
+      <div class="container mx-auto px-4">
+        <h1 class="text-3xl font-semibold">
+          {% block page_heading %}Default Heading{% endblock %}
+        </h1>
+
+        <p class="mt-2 text-gray-600">
+          {% block page_subheading %}{% endblock %}
+        </p>
+      </div>
+    </header>
+
+    <main class="min-h-screen">
+      {% block content %}{% endblock %}
+    </main>
+
+    {% include "@partials/footer.twig" %}
+    {% include "@partials/scripts.twig" %}
+  </body>
+</html>

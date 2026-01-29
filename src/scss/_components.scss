@@ -1,0 +1,7 @@
+@reference "tailwindcss";
+
+@layer components {
+  .btn {
+    @apply px-5 py-3 rounded-xl bg-black text-white transition hover:opacity-90;
+  }
+}

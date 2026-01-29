@@ -1,0 +1,14 @@
+{% extends "@layouts/base.twig" %}
+{% block title %}Contact Us{% endblock %}
+{% block page_heading %}Contact Us{% endblock %}
+{% block page_subheading %}You Contact Us and We'll contact you{% endblock %}
+{% block content %}
+<section class="container mx-auto px-4 py-12 max-w-xl">
+  <form class="space-y-4">
+    <input class="w-full border rounded-xl p-3" placeholder="Your Name" />
+    <input class="w-full border rounded-xl p-3" placeholder="Email Address" />
+    <textarea class="w-full border rounded-xl p-3" rows="5" placeholder="Message"></textarea>
+    <button class="btn w-full">Send Message</button>
+  </form>
+</section>
+{% endblock %}

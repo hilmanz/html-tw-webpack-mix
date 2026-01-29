@@ -1,0 +1,27 @@
+[
+  {
+    "title": "The Art of Clean Front-End",
+    "slug": "art-of-clean-frontend",
+    "excerpt": "A simple approach to building maintainable UI.",
+    "date": "2026-01-20",
+    "cover": "/images/blog/cover-1.jpg",
+    "og_image": "/images/blog/og-1.jpg",
+    "content": [
+      "Clean front-end is not about perfection.",
+      "It’s about clarity, structure, and speed of iteration.",
+      "This boilerplate helps you ship faster."
+    ]
+  },
+  {
+    "title": "Why Twig Still Slaps",
+    "slug": "why-twig-still-slaps",
+    "excerpt": "Twig layouts + partials = scalable HTML.",
+    "date": "2026-01-22",
+    "cover": "/images/blog/cover-2.jpg",
+    "og_image": "",
+    "content": [
+      "Twig gives you layout inheritance without heavy frameworks.",
+      "You get clean templates and reusable UI blocks."
+    ]
+  }
+]

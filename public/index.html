@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>My Website Template</title>
+    <meta
+      name="description"
+      content="Modern front-end boilerplate with Twig + Tailwind + Mix."
+    />
+
+    <link rel="icon" href="/favicon/favicon.ico" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="My Website" />
+    <meta
+      property="og:description"
+      content="Fast, clean, modern UI boilerplate."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://example.com" />
+    <meta property="og:image" content="/images/og-cover.jpg" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="My Website" />
+    <meta
+      name="twitter:description"
+      content="Fast, clean, modern UI boilerplate."
+    />
+    <meta name="twitter:image" content="/images/og-cover.jpg" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+  <body class="bg-white text-gray-900">
+    <nav class="border-b">
+      <div
+        class="container mx-auto px-4 py-4 flex items-center justify-between"
+      >
+        <a href="/index.html" class="font-bold text-xl">Brand</a>
+
+        <div class="flex gap-4 text-sm">
+          <a href="/about.html">About</a>
+          <a href="/testimonials.html">Testimonials</a>
+          <a href="/faq.html">FAQ</a>
+          <a href="/gallery.html">Gallery</a>
+          <a href="/blog-list.html">Blog</a>
+          <a href="/contact.html">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <header class="py-10 border-b">
+      <div class="container mx-auto px-4">
+        <h1 class="text-3xl font-semibold">Template Homepage</h1>
+
+        <p class="mt-2 text-gray-600">
+          Tailwind v4 + Twig + Mix + Plugins ready
+        </p>
+      </div>
+    </header>
+
+    <main class="min-h-screen">
+      <section class="container mx-auto px-4 py-12">
+        <div class="grid md:grid-cols-2 gap-8 items-center">
+          <div>
+            <h2 class="text-3xl font-semibold">My Hero Section</h2>
+            <p class="mt-3 text-gray-600" data-fade>
+              Boilerplate ready for animation + sliders + SEO meta. Constructed
+              by chatgpt. Edited by hilmanz.
+            </p>
+            <button class="btn mt-6">Explore</button>
+            <div class="pulse-dot mt-6 w-3 h-3 rounded-full bg-black"></div>
+          </div>
+
+          <div class="rounded-2xl bg-white shadow p-6">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide p-6 bg-gray-100 rounded-xl">
+                  Swiper Slide 1
+                </div>
+                <div class="swiper-slide p-6 bg-gray-100 rounded-xl">
+                  Swiper Slide 2
+                </div>
+                <div class="swiper-slide p-6 bg-gray-100 rounded-xl">
+                  Swiper Slide 3
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-14">
+          <h3 class="text-xl font-semibold mb-4">Splide Demo</h3>
+          <div id="splide" class="splide">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide bg-gray-100 rounded-xl p-6">Card A</li>
+                <li class="splide__slide bg-gray-100 rounded-xl p-6">Card B</li>
+                <li class="splide__slide bg-gray-100 rounded-xl p-6">Card C</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-14">
+          <h3 class="text-xl font-semibold mb-4">ThreeJS Canvas</h3>
+          <canvas id="three-canvas" class="border rounded-xl"></canvas>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t mt-16">
+      <div class="container mx-auto px-4 py-10 text-sm text-gray-500">
+        © 2026 Brand. All rights reserved.
+      </div>
+    </footer>
+    <script src="/js/app.js" defer></script>
+  </body>
+</html>
