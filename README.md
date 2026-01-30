@@ -66,6 +66,14 @@ No need to manually add new pages to the build script.
 - `src/data/blog.json`
 - Blog routes can be generated later (skipped for now)
 
+### 📦 Plugins
+- GSAP ready
+- ThreeJS ready
+- AnimeJS ready
+- SwiperJS ready
+- SplideJS ready
+- jQuery ready
+
 ---
 
 ## 📁 Folder Structure
