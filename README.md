@@ -69,52 +69,131 @@ No need to manually add new pages to the build script.
 ---
 
 ## 📁 Folder Structure
-.
-├── public/
-│ ├── css/
-│ ├── js/
-│ ├── images/
-│ ├── fonts/
-│ └── index.html
-│
-├── src/
-│ ├── assets/
-│ │ ├── images/
-│ │ └── fonts/
-│ │
-│ ├── data/
-│ │ └── blog.json
-│ │
-│ ├── js/
-│ │ └── app.js
-│ │
-│ ├── scss/
-│ │ ├── main.scss
-│ │ └── _variables.scss
-│ │
-│ └── views/
-│ ├── layouts/
-│ │ └── base.twig
-│ ├── partials/
-│ │ ├── head.twig
-│ │ ├── nav.twig
-│ │ ├── header.twig
-│ │ ├── footer.twig
-│ │ └── scripts.twig
-│ └── pages/
-│ ├── index.twig
-│ ├── about.twig
-│ └── contact.twig
-│
-├── tools/
-│ └── twig/
-│ ├── build-pages.js
-│ └── watch-pages.js
-│
-├── webpack.mix.js
-├── tailwind.config.js
-├── postcss.config.js
-└── package.json
+```
+└── 📁html-tw-webpack-mix
+    └── 📁public
+        └── 📁blog
+            └── 📁art-of-clean-frontend
+                ├── index.html
+            └── 📁why-twig-still-slaps
+                ├── index.html
+        └── 📁css
+            ├── main.css
+        └── 📁favicon
+        └── 📁fonts
+            └── 📁graphik
+                ├── Graphik-Black-Web.woff2
+                ├── Graphik-Bold-Web.woff2
+                ├── Graphik-Extralight-Web.woff2
+                ├── Graphik-Light-Web.woff2
+                ├── Graphik-Medium-Web.woff2
+                ├── Graphik-Regular-Web.woff2
+                ├── Graphik-Thin-Web.woff2
+            ├── Inter-Black.woff
+            ├── Inter-Bold.woff
+            ├── Inter-ExtraBold.woff
+            ├── Inter-ExtraLight-BETA.woff
+            ├── Inter-Light-BETA.woff
+            ├── Inter-Medium.woff
+            ├── Inter-Regular.woff
+            ├── Inter-SemiBold.woff
+            ├── Inter-Thin-BETA.woff
+        └── 📁images
+            └── 📁blog
+                ├── cover-1.jpg
+                ├── cover-2.jpg
+                ├── og-1.jpg
+            ├── __og-cover.jpg
+            ├── __og-cover.webp
+            ├── og-cover.jpg
+            ├── og-cover.png
+            ├── og-cover.webp
+        └── 📁js
+            ├── app.js
+            ├── app.js.LICENSE.txt
+        ├── 404.html
+        ├── about.html
+        ├── blog-list.html
+        ├── contact.html
+        ├── faq.html
+        ├── gallery.html
+        ├── index.html
+        ├── mix-manifest.json
+        ├── robots.txt
+        ├── sitemap.xml
+        ├── testimonials.html
+    └── 📁src
+        └── 📁assets
+            └── 📁fonts
+                └── 📁graphik
+                    ├── Graphik-Black-Web.woff2
+                    ├── Graphik-Bold-Web.woff2
+                    ├── Graphik-Extralight-Web.woff2
+                    ├── Graphik-Light-Web.woff2
+                    ├── Graphik-Medium-Web.woff2
+                    ├── Graphik-Regular-Web.woff2
+                    ├── Graphik-Thin-Web.woff2
+                ├── Inter-Black.woff
+                ├── Inter-Bold.woff
+                ├── Inter-ExtraBold.woff
+                ├── Inter-ExtraLight-BETA.woff
+                ├── Inter-Light-BETA.woff
+                ├── Inter-Medium.woff
+                ├── Inter-Regular.woff
+                ├── Inter-SemiBold.woff
+                ├── Inter-Thin-BETA.woff
+            └── 📁icons
+            └── 📁images
+                ├── __og-cover.jpg
+                ├── og-cover.jpg
+        └── 📁data
+            ├── blog.json
+        └── 📁js
+            └── 📁components
+                ├── animations.js
+                ├── sliders.js
+            ├── app.js
+        └── 📁scss
+            ├── _components.scss
+            ├── _variables.scss
+            ├── main.scss
+        └── 📁views
+            └── 📁layouts
+                ├── base.twig
+            └── 📁pages
+                ├── 404.twig
+                ├── about.twig
+                ├── blog-list.twig
+                ├── blog-post.twig
+                ├── contact.twig
+                ├── faq.twig
+                ├── gallery.twig
+                ├── index.twig
+                ├── testimonials.twig
+            └── 📁partials
+                ├── footer.twig
+                ├── head.twig
+                ├── header.twig
+                ├── nav.twig
+                ├── scripts.twig
+    └── 📁tools
+        └── 📁bs
+            ├── server.js
+        └── 📁images
+            ├── convert-webp.js
+        └── 📁seo
+            ├── generate-seo.js
+        └── 📁twig
+            ├── build-pages.js
+            ├── watch-pages.js
+    ├── .gitignore
+    ├── package-lock.json
+    ├── package.json
+    ├── postcss.config.js
+    ├── README.md
+    ├── tailwind.config.js
+    └── webpack.mix.js
+```
 
 
 ---
@@ -133,17 +212,7 @@ Install dependencies:
 ```bash
 npm install
 
----
-
-## 📦 Development
-
-Run dev mode (Twig + Mix together)
-
-```bash
-npm run dev
 
 ---
-
-
 
 
