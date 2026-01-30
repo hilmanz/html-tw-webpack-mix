@@ -211,8 +211,96 @@ Install dependencies:
 
 ```bash
 npm install
-
+   
+```
 
 ---
 
+## 📦 Development
+
+Install dependencies:
+
+```bash
+npm run dev
+   
+```
+
+This will run:
+- mix watch (compile SCSS + JS)
+- twig:watch (rebuild HTML pages)
+
+Then open:
+👉 http://localhost:3000
+
+---
+
+## 📦 Build Pages (Twig → HTML)
+
+Build all pages once:
+
+```bash
+npm run twig:build
+
+```
+
+Output will go to:
+
+```cpp
+public/*.html
+
+```
+___
+
+## 👀 Watch Pages (Twig + JSON)
+
+Watch and rebuild pages automatically:
+
+```bash
+npm run twig:watch
+
+```
+This watches:
+- src/views/**/*.twig
+- src/data/**/*.json
+
+___
+
+## 🎨 Tailwind + SCSS Build
+
+Watch SCSS + JS
+
+```bash
+npm run mix:watch
+
+```
+
+Build production assets
+
+```bash 
+npm run mix:prod
+
+```
+___
+
+## 🧾 Creating a New Page (Automatic)
+
+To add a new page, just create a file inside:
+
+```bash
+src/views/pages/
+
+```
+Example:
+```bash
+src/views/pages/services.twig
+
+```
+Then it will auto-generate:
+```arduino
+public/services.html
+
+```
+No need to edit the build script manually ✅
+
+___
 
